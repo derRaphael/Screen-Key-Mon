@@ -1,0 +1,114 @@
+ Screen-Key-Mon v0.1
+=====================
+
+ This project forks the well known 'key-mon 1.7.1' from Scott Kirkwood 
+ and forks 'Screenkey 0.2' also a well known project by Pablo Seminario 
+ with the goal to merge both wonderfull projects, so that both projects 
+ complete each other. Hence the name Screen-Key-Mon. 
+ 
+ At present day, Screenkey has not been incorporated yet, but only Key-
+ Mon was adapted in order to play nicely with a standard Screenkey v0.2 
+ installation.
+ 
+ Read more about the changes in the Status section of this document.
+
+ All development and testing is done with Ubuntu 10.10
+
+ Latest Key-Mon can be found here: 
+   http://code.google.com/p/key-mon
+
+ Latest Screenkey can be found here:
+   https://launchpad.net/screenkey
+
+ Status
+========
+
+ Currently only Key-Mon was modified to play nicely with Screenkey. Next 
+ Release (0.2) will merge both sources and allow to start both Projects 
+ as with just one file.
+
+ Screen-Key-Mon v0.1 has compared to Keymon v1.7 a few minor changes and 
+ a new default theme besides the documentation of key-mon except the notes 
+ below is still valid.
+
+ Added features:
+  -c is now a shortcut for --mouse (c for cursor)
+  
+  -k, --keys is defaulted to true
+   use --nokeys to turn off the current pressed key
+   
+  -b, --buttons is defaulted to true
+   use --nobuttons to turn off all shown keys
+  
+  modern2 is now the default theme
+
+ Changed behaviour and defaults:
+  --meta (super or windows key) is defaulted to true
+  --backgroundless is now true by default
+  
+  Added theme: Modern2 by David Revoy <http://www.davidrevoy.com/>
+	
+ Requirements
+==============
+
+ Since no *.deb package exists the software needs to be compiled. Some 
+ additional packages may be needed in order to do so:
+ 
+ 	user@shell:~$ sudo apt-get install python-gtk2-dev
+ 	user@shell:~$ sudo apt-get install python-xlib
+  
+ Installation
+==============
+
+ When the requirements are fullfilled, clone, or download the project 
+ from github, extract it if neccssary and run from shell:
+
+	user@shell:~/path/to/skm/<version>$ sudo python setup.py install
+
+ Deinstallation/Removement/Rebuilding
+======================================
+
+ This projects does not have a deinstallation routine yet. However, 
+ removement is fairly easy:
+ 
+ 	user@shell:~$ sudo rm -rf /usr/share/pyshared/screenkeymon
+  user@shell:~$ sudo rm -rf /usr/local/lib/python2.6/dist-packages/screenkeymon
+  user@shell:~$ sudo rm -f /usr/local/bin/screen-key-mon
+  user@shell:~$ sudo rm -rf ~/.config/screen-key-mon/
+  
+ When rebuilding the project, you want to remove python's build directory 
+ aswell
+ 
+  user@shell:~/path/to/skm/<current-version>$ sudo rm -rf build
+
+ Authors
+=========
+
+ Original Maintainers
+  Screenkey: Pablo Seminario <pabluk@gmail.com>
+  Key-mon:   Scott Kirkwood  <scottakirkwood@gmail.com>
+
+ Additional Artwork
+  Theme 'modern2' by David Revoy 
+  <http://www.davidrevoy.com/index.php?article68/keymon-custom-theme>
+
+ Screen-Key-Mon: derRaphael <screenKeyMon@itholic.org>
+
+ License
+=========
+
+ Copyright (c) 2011 derRaphael <screenKeyMon@itholic.org>
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+

@@ -1,0 +1,22 @@
+===========================
+ Installing screen-key-mon
+===========================
+
+ Requirements
+==============
+
+ Since no *.deb package exists the software needs to be compiled. Some 
+ additional packages may be needed in order to do so:
+ 
+ 	user@shell:~$ sudo apt-get install python-gtk2-dev
+ 	user@shell:~$ sudo apt-get install python-xlib
+  
+ Installation
+==============
+
+ When the requirements are fullfilled, clone, or download the project 
+ from github, extract it if neccssary and run from shell:
+
+	user@shell:~/path/to/skm/<version>$ sudo python setup.py install
+
+
