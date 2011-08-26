@@ -61,9 +61,20 @@
 ==============
 
  When the requirements are fullfilled, clone, or download the project 
- from github, extract it if neccssary and run from shell:
+ from github:
+ 
+  https://github.com/derRaphael/Screen-Key-Mon 
+  
+ extract it if neccssary and run from shell:
 
 	user@shell:~/path/to/skm/<version>$ sudo python setup.py install
+	
+ You also might want to use the included skm-helper.sh bash script, 
+ which allows to do standard tasks without the hassle of typing or
+ pasting various commands, simply use:
+ 
+	user@shell:~/path/to/skm/<version>$ sudo ./skm-helper.sh
+ 
 
  Deinstallation/Removement/Rebuilding
 ======================================
@@ -80,6 +91,13 @@
  aswell
  
   user@shell:~/path/to/skm/<current-version>$ sudo rm -rf build
+
+ You also might want to use the included skm-helper.sh bash script, 
+ which allows to do standard tasks without the hassle of typing or
+ pasting various commands, simply use:
+ 
+	user@shell:~/path/to/skm/<version>$ sudo ./skm-helper.sh
+ 
 
  Authors
 =========
